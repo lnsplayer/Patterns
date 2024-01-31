@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Genos, sans-serif;    
+}
+
+/*-----шрифты-----------------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Genos:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&family=Marhey:300,regular,500,600,700&display=swap);
+
+/*-----основа-----------------------------------------------*/
+
+.wraper {
+    min-width: 100%;
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+._container {
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1442px;
+}
+
+/*-----header-----------------------------------------------*/
+
+.burger {
+    position: relative;
+    display: none;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    background-color: inherit;
+    border: none;
+}
+.burger span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: aliceblue;
+    left: 5px;
+    transition: transform 0.5s, opacity .5s, background-color .5s;
+}
+.burger span:nth-child(1) {
+    transform: translateY(10px);
+}
+.burger span:nth-child(3) {
+    transform: translateY(-10px);
+}
+.header.open .burger span:nth-child(1) {
+    transform: translateY(0) rotate(-45deg);
+}
+.header.open .burger span {
+    background-color: aliceblue;
+}
+.header.open .burger span:nth-child(2) {
+    opacity: 0;
+}
+.header.open .burger span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+}
+.header {
+    min-height: 75px;
+    background-color: #9fbcf3;
+}
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: baseline;
+    color: aliceblue;
+    align-items: center;
+    min-height: 75px;
+}
+.logo {
+    font-size: 36px;
+}
+.nav {
+    background-color: #9fbcf3;
+}
+.nav_list {
+    display: flex;
+    gap: 30px;
+}
+@media (max-width:992px) {
+    .burger {
+        display: block;
+    }
+    .nav {
+        box-sizing: border-box;
+        padding: 80px 20px 20px 20px;
+        background-color: #77a9eb;
+        position: absolute;
+        left: -350px;
+        top: 0;
+        width: 350px;
+        height: 300px;
+        transition: transform .5s;
+    }
+    .nav_list {
+        display: block;
+    }
+    .nav_item {
+        font-size: 21px;
+        display: block;
+        padding: 15px 0;
+    }
+    .header.open nav {
+        transform: translateX(100%);
+    }
+    .burger span:nth-child(1) {
+        rotate: 45;
+    }
+    .burger span:nth-child(3) {
+        transform: translateY(-10px);
+    }
+}
+/*-----основа-----------------------------------------------*/
+/*-----основа-----------------------------------------------*/
+/*-----основа-----------------------------------------------*/
+/*-----основа-----------------------------------------------*/

@@ -1,0 +1,24 @@
+/*----шрифты-------------------------------------------*/
+
+
+
+/*----основа-------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    box-sizing: border-box;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+._container {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 735px;
+}
