@@ -1,0 +1,73 @@
+/*----шрифты---------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+/*----переменные---------------------*/
+
+:root {
+    --mw: 1140px;
+}
+
+/*----основа---------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+._container {
+    max-width: var(--mw);
+    margin: 0 auto;
+    height: 100%;
+}
+
+/*----ocenka---------------------*/
+
+.ocenka {
+    user-select: none;
+    height: 120px;
+    width: 400px;
+    margin: 200px auto 0 auto;
+    background-color: lavender;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+.ocenka_container {
+    padding: 20px;
+}
+.ocenite {
+    font-size: 32px;
+}
+.stars {
+    display: inline-flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+}
+.star {
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.stars[data-total-value="1"] .star:nth-child(n+5),
+.stars[data-total-value="2"] .star:nth-child(n+4),
+.stars[data-total-value="3"] .star:nth-child(n+3),
+.stars[data-total-value="4"] .star:nth-child(n+2),
+.stars[data-total-value="5"] .star:nth-child(n+1) {
+    color: yellow;
+}
+.star:hover,
+.star:hover ~ .star {
+    color: rgb(238, 238, 238);
+}
