@@ -1,12 +1,12 @@
 /*----шрифты-------------------------------------------*/
 
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 
 /*----переменные-------------------------------------------*/
 
 :root {
-    --maxWidth: ;
-    --mainFont: ;
+    --maxWidth: px;
+    --fontOpenSans: "Open Sans", sans-serif;
 }
 
 /*----основа-------------------------------------------*/
@@ -23,21 +23,21 @@
     border: none;
     outline: none;
 }
-img {
-    vertical-align: top;
-}
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a,
+p {
     font-weight: inherit;
     font-size: inherit;
+    font-family: inherit;
 }
 body {
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 300;
     font-family: var(--mainFont);
 }
 .wrapper {
@@ -57,5 +57,5 @@ body {
     max-width: var(--maxWidth);
 }
 
-/*----далее-------------------------------------------*/
+/*----pa1-------------------------------------------*/
 
