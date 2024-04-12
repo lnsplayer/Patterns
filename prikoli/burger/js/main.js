@@ -1,5 +1,12 @@
+/*-----переменные-----------------------------------------------*/
+
+const burger = document.getElementById("burger"),
+    header = document.querySelector("header");
+
+/*-----функции-----------------------------------------------*/
+
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("burger").addEventListener("click", function() {
-        document.querySelector("header").classList.toggle("open")
+    burger.addEventListener("click", function() {
+        header.classList.toggle("open")
     })
 })

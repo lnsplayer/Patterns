@@ -1,31 +1,58 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Genos, sans-serif;    
-}
-
 /*-----шрифты-----------------------------------------------*/
 
-@import url(https://fonts.googleapis.com/css?family=Genos:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&family=Marhey:300,regular,500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+/*-----переменные-----------------------------------------------*/
+
+:root {
+    --maxWidth: 1442px;
+    --white: #FFFFFF;
+    --black: #000000;
+    --mainFont: "Open Sans", sans-serif;
+}
 
 /*-----основа-----------------------------------------------*/
 
-.wraper {
+* {
+    margin: 0;
+    padding: 0; 
+    list-style: none;  
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: inherit;
+    border: none;
+}
+body {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: var(--mainFont);
+}
+.wrapper {
     min-width: 100%;
     overflow: hidden;
 }
-a {
-    text-decoration: none;
-    color: inherit;
-}
-ul {
-    list-style: none;
-}
 ._container {
-    box-sizing: border-box;
-    padding: 0 15px;
+    max-width: var(--maxWidth);
     margin: 0 auto;
-    max-width: 1442px;
+    padding: 0 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+}
+button:hover {
+    filter: brightness(120%);
+}
+button:active {
+    filter: brightness(80%);
 }
 
 /*-----header-----------------------------------------------*/
@@ -36,8 +63,6 @@ ul {
     z-index: 3;
     width: 40px;
     height: 40px;
-    background-color: inherit;
-    border: none;
 }
 .burger span {
     position: absolute;
@@ -87,6 +112,14 @@ ul {
     display: flex;
     gap: 30px;
 }
+
+/*-----основа-----------------------------------------------*/
+/*-----основа-----------------------------------------------*/
+/*-----основа-----------------------------------------------*/
+/*-----основа-----------------------------------------------*/
+
+/*-----media-----------------------------------------------*/
+
 @media (max-width:992px) {
     .burger {
         display: block;
@@ -120,7 +153,3 @@ ul {
         transform: translateY(-10px);
     }
 }
-/*-----основа-----------------------------------------------*/
-/*-----основа-----------------------------------------------*/
-/*-----основа-----------------------------------------------*/
-/*-----основа-----------------------------------------------*/
